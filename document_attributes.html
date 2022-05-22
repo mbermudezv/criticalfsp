@@ -9,48 +9,105 @@
     <title>Document Type</title>
 </head>
 <body>
-    <h2>Attachments</h2>
-    <div id="divTitulo">Organizational Chart Signed</div>
-    <div id="divTitulo">A-210-002-A</div>
-    <div>
-        <label for="description">Creation Date</label>
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="document_type.html">Back</a>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-column bd-highlight mb-3 align-items-center">
+        
+        <div class="card text-center border-light">
+            <div class="card-body">
+                <h2 class="card-title">Attachments</h2>
+            </div>
+        </div>            
+        
+        <div class="card text-center text-white bg-dark rounded">
+            <div class="card-body">
+                <h5 class="card-title">Organizational Chart Signed</h5>
+                <h6 class="card-title">A-210-002-A</h6>
+            </div>
+        </div>            
+
+        <div class="mb-3 pt-3">
+            <label for="Version" class="form-label">Version</label>
+            <input type="email" class="form-control" 
+                    value="A"
+                    id="Version">
+        </div>
+
+        <div class="mb-3">
+            <label for="CD" class="form-label">Creation Date</label>
+            <input type="email" class="form-control"                   
+                    value="05/05/2022"
+                    id="CD">
+        </div>
+        <div class="mb-3">
+            <label for="MD" class="form-label">Modification Date</label>
+            <input type="email" class="form-control" 
+                    value="05/05/2022"
+                    id="MD">
+        </div>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+            <label class="form-check-label" for="flexSwitchCheckDefault">Approved</label>
+        </div>
+                            
+        <div class="card text-center mb-2">
+            <div class="card-body">
+                <h5 class="card-title text-white bg-dark rounded">Link Document</h5>
+                <textarea name="description2" id="" cols="30" rows="2">Toluca Foods\TFI Food Safetey Plan - Documents\2.9 Trainin</textarea>
+            </div>
+        </div>
+
+        <div class="card text-center mb-2">
+            <div class="card-body">
+                <h5 class="card-title text-white bg-dark rounded">Link FSP</h5>
+                <textarea name="description2" id="" cols="30" rows="2">Food Safety Portal in Access</textarea>
+            </div>
+        </div>
+        
+        <div class="card text-center mb-2">
+            <div class="card-body">
+                <h5 class="card-title text-white bg-dark rounded">Link Inventory System</h5>
+                <textarea name="description2" id="" cols="30" rows="2">All Order System</textarea>
+            </div>
+        </div>  
+
+        <div class="card text-center mb-2">
+            <div class="card-body">
+                <h5 class="card-title text-white bg-dark rounded">Upload</h5>
+                <input class="form-control form-control-lg" id="formFileLg" type="file">
+            </div>
+        </div>       
+
+        <div class="card text-center mb-2">
+            <div class="card-body">
+                <h5 class="card-title text-white bg-dark rounded">Download</h5>
+                <div class="mb-1 me-3">
+                    <div class="card">                        
+                        <div class="row g-0">
+                            <div class="col-2">
+                                <img src="img/word.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-10">
+                                <div class="card-body">
+                                <h5 class="card-title">A-210-002-A Organizational Chart Signed</h5>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>                    
+                </div>    
+            </div>
+        </div>       
+
+        <div class="mb-1 me-3"> 
+            <button class="btn btn-outline-dark btn-lg">Save</button>
+        </div>                   
     </div>
-    <div>        
-        <textarea name="description" id="" cols="30" rows="1">05/05/2022</textarea>
-    </div>
-    <div>
-        <label for="description1">Modification Date</label>
-    </div>
-    <div>       
-        <textarea name="description1" id="" cols="30" rows="1">05/05/2022</textarea>
-    </div>
-    <div>
-        <label for="description2">Version</label>
-    </div>
-    <div>        
-        <textarea name="description2" id="" cols="30" rows="1">A</textarea>
-    </div>
-    <div>
-        <label for="description2">Link</label>
-    </div>
-    <div>        
-        <textarea name="description2" id="" cols="30" rows="2">sistema/form1/pantalla1</textarea>
-    </div>
-    <div>
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile">
-    </div>
-    <nav>
-    <ul>
-        <li>
-            <img src="img/word.png" width="30px" height="30px" >
-            <a href="#"><strong>A-210-002-A Organizational Chart Signed</strong></a>
-        </li>
-    </ul>
-    </nav>       
-    <div> 
-        <button><a href="#"><h3>Save</h3></a></button>
-    </div>    
-       
+           
 </body>
 </html>
